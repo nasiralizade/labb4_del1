@@ -9,4 +9,4 @@
             </label></p>
         <p><input type="submit" name="addPost" value="Skapa Inlägg"></p>
     </form>
-</section>
+</section><!-- /.container -->
