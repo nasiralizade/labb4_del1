@@ -1,5 +1,5 @@
 <section id="postSection">
-    <h3>Gästboksinlägg</h3><hr>
+    <h3>Gästboksinlägg</h3>
     <?php foreach ($register->getPost() as $key => $obj): ?>
         <div>
             <h3><?= $obj->getUsername(); ?></h3>
@@ -10,6 +10,6 @@
                     onclick="window.location.href='<?= basename( $_SERVER["PHP_SELF"] ); ?>?delPost=<?= $key ?>'">Radera
             </button>
         </div>
-    <?php  endforeach; ?>
-</section> <!--/#postSection -->
+    <?php endforeach; ?>
 
+</section> <!--/#postSection -->

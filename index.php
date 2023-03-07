@@ -1,5 +1,4 @@
-<?php
-session_start();
+﻿<?php
 include("classes/NewPost.php");
 $register = new NewPost();
 //skapar en objekt av NewPost klass, för senare kunna använda dess funktioner.
@@ -11,11 +10,9 @@ if (isset( $_REQUEST['delPost'] )) {
     //Tar bort inlägg beroende på valt index
     $register->delPost( intval( $_REQUEST['delPost'] ) );
     unset( $_REQUEST['delPost'] );
-    header("Location: index.php#postSection");
+    header( "Location: index.php" );
 }
 include("includes/header.php");
 include("includes/addPostSection.php");
 include("includes/posts.php");
 include("includes/footer.php");
-
-
